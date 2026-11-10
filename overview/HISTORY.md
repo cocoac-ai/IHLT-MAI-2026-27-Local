@@ -29,6 +29,11 @@ Changes made while moving the notebooks to `labs/`:
 
 Later the same day `Lab06-full` replaced `Lab06` (the `local/main` version): it contains all of its analysis, with the NLTK and FreeLing pipelines and MFS added.
 
+Then every lab was reduced to a single notebook:
+
+- `Lab02-two-libs` and `Lab03-two-libs` replaced `Lab02` and `Lab03`. Their TextServer code (tokenizer, morpho) is kept but off (`RUN_TEXTSERVER = False`), because the service has a daily limit and the answers are only partly cached.
+- `Lab07-sections` replaced the three-tool `Lab07`, with FreeLing added back from the TextServer answers of Lab 6 (`common/ukb_senses.json`, whose `NP` tags give the NE class). The code for the `entities` service is kept but off (`USE_ENTITIES_SERVICE = False`).
+
 Not carried over: the older copies of other labs inside the side branches (each side branch only changed its own lab), and `.gitkeep` files.
 
 ## Submitted versions
