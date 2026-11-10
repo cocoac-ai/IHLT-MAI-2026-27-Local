@@ -17,7 +17,7 @@ The history of the old local branches was not kept: their content is in the file
 | `teamwork` | `f651a1e` 2026-11-06 | Shared team branch, one lab folder released at a time | merged into `main`, deleted |
 | `local/main` | `995d25b` 2026-11-04 | All my own work: Lab01–Lab09, STS project, `common/` | `labs/Lab01.ipynb`–`Lab09.ipynb`, `project/sts-project.ipynb`, `common/`, `pyproject.toml`, `uv.lock` |
 | `local/lab02-03-two-libs` | `3c2d137` 2026-11-01 | Lab02 and Lab03 with separate NLTK and spaCy pipelines, plus TextServer (tokenizer, morpho); last commit was WIP | `labs/Lab02-two-libs.ipynb`, `labs/Lab03-two-libs.ipynb`, `common/textserver_tokenizer.json` |
-| `local/lab06-nltk-mfs` | `a274175` 2026-11-04 | Lab06 full study version: NLTK, spaCy and FreeLing pipelines, Lesk, MFS and UKB | `labs/Lab06-full.ipynb` |
+| `local/lab06-nltk-mfs` | `a274175` 2026-11-04 | Lab06 full study version: NLTK, spaCy and FreeLing pipelines, Lesk, MFS and UKB | `labs/Lab06-full.ipynb`, then `labs/Lab06.ipynb` (see below) |
 | `local/lab07-sections` | `1c24253` 2026-11-05 | Lab07 experiments: NE types, feature combinations, FreeLing entities service (off) | `labs/Lab07-sections.ipynb` |
 | `local/main-project-team` | `dfe6042` 2026-10-20 | STS project split between two students | `overview/project-two-student-plan.md`; its notebook only added the student owners to the section headings, so the single-student notebook of `local/main` was kept |
 
@@ -26,6 +26,8 @@ Changes made while moving the notebooks to `labs/`:
 - the setup comment now says `labs/` instead of `labXX/`;
 - `Lab02-two-libs` and `Lab03-two-libs` import `textserver` from `common/` and keep their credentials and TextServer caches there (before: the root and the lab folder);
 - `Lab06-full` refers to the team repository `team/` instead of the `teamwork` branch.
+
+Later the same day `Lab06-full` replaced `Lab06` (the `local/main` version): it contains all of its analysis, with the NLTK and FreeLing pipelines and MFS added.
 
 Not carried over: the older copies of other labs inside the side branches (each side branch only changed its own lab), and `.gitkeep` files.
 

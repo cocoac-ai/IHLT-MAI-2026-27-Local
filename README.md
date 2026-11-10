@@ -4,7 +4,7 @@ Ran's own workspace for the UPC MAI course *Introduction to Human Language Techn
 
 | Folder | What |
 |---|---|
-| `labs/` | My lab notebooks, `Lab01`–`Lab09`, plus the study and experimental versions (`Lab02-two-libs`, `Lab03-two-libs`, `Lab06-full`, `Lab07-sections`) |
+| `labs/` | My lab notebooks, `Lab01`–`Lab09`, plus the study and experimental versions (`Lab02-two-libs`, `Lab03-two-libs`, `Lab07-sections`); `Lab06` is the complete version (three pipelines, Lesk, MFS and UKB) |
 | `project/` | My STS project notebook (SemEval 2012 Task 6) |
 | `common/` | Shared code and caches: TextServer client, UKB and TextServer answers, `credentials.json` (ignored) |
 | `data/` | Datasets (ignored): `train/`, `trial/`, `test_gold/`, `task6-submissions/` |
