@@ -1,13 +1,9 @@
 # Team repository (cocoac-ai/IHLT-MAI-2026-27-Labs): separate git repo, never tracked here
 /team/
 
-# Data and downloaded resources
-/train/
-/trial/
-/test_gold/
-/task6-submissions/
-/nltk_data/
-/hf_cache/
+# Datasets and downloaded models (NLTK data, Hugging Face cache)
+/data/
+/models/
 /requirements/
 
 # Course slides (PDFs from the lecturer)
