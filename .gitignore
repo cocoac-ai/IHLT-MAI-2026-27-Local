@@ -1,0 +1,30 @@
+# Team repository (cocoac-ai/IHLT-MAI-2026-27-Labs): separate git repo, never tracked here
+/team/
+
+# Data and downloaded resources
+/train/
+/trial/
+/test_gold/
+/task6-submissions/
+/nltk_data/
+/hf_cache/
+/requirements/
+
+# Course slides (PDFs from the lecturer)
+/slides/
+
+# TextServer credentials
+credentials.json
+
+# Environment and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Editor / OS
+.vscode/
+.claude/
+.DS_Store
