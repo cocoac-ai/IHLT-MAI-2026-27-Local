@@ -5,12 +5,7 @@ Until 2026-11-10 all IHLT work lived in one repository, the team one (`cocoac-ai
 - this repository (`cocoac-ai/IHLT-MAI-2026-27-Local`), only mine, started without history;
 - the team repository, cloned in `team/` (branch `teamwork`), unchanged.
 
-The full old history (every branch and tag) is kept in `~/Backups/IHLT-history-2026-11-10.bundle`. To look at it:
-
-```bash
-git clone ~/Backups/IHLT-history-2026-11-10.bundle /tmp/ihlt-old
-cd /tmp/ihlt-old && git branch -a
-```
+The history of the old local branches was not kept: their content is in the files listed below, and the backup bundle was deleted on 2026-11-10. The team branches and the `labNN-submitted` tags are still in the team repository.
 
 ## Old branches
 
