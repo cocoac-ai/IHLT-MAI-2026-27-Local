@@ -1,11 +1,11 @@
 # History of this workspace
 
-Until 2026-11-10 all IHLT work lived in one repository, the team one (`cocoac-ai/IHLT-MAI-2026-27`, then named `IHLT-MAI-2026-27-Labs`), with my own work on local branches that were never pushed. On 2026-11-10 it was split in two:
+Until 2026-11-10 all IHLT work lived in one repository, the team one (`cocoac-ai/IHLT-MAI-2026-27-Labs`), with my own work on local branches that were never pushed. On 2026-11-10 it was split in two:
 
 - this repository (`cocoac-ai/IHLT-MAI-2026-27-Local`), only mine, started without history;
 - the team repository, cloned in `team/`, unchanged.
 
-The same day the team repository switched from `teamwork` to `main`: `main` was fast-forwarded to `teamwork` (`f651a1e`), made the default branch, and `teamwork` was deleted.
+The same day the team repository switched from `teamwork` to `main`: `main` was fast-forwarded to `teamwork` (`f651a1e`), made the default branch, and `teamwork` was deleted. Changes reach `main` only through pull requests (no approval needed); deleting `main` and force pushes are blocked.
 
 The history of the old local branches was not kept: their content is in the files listed below, and the backup bundle was deleted on 2026-11-10. The team branches and the `labNN-submitted` tags are still in the team repository.
 

@@ -8,7 +8,7 @@ Ran's own workspace for the UPC MAI course *Introduction to Human Language Techn
 | `project/` | My STS project notebook (SemEval 2012 Task 6) |
 | `common/` | Shared code and caches: TextServer client, UKB and TextServer answers, `credentials.json` (ignored) |
 | `overview/` | Notes, plans and the history of this workspace (`HISTORY.md`) |
-| `team/` | Team repository `cocoac-ai/IHLT-MAI-2026-27` (separate git repo, ignored here) |
+| `team/` | Team repository `cocoac-ai/IHLT-MAI-2026-27-Labs` (separate git repo, ignored here) |
 
 Data folders in the root are not tracked: `train/`, `trial/`, `test_gold/`, `task6-submissions/`, `nltk_data/`, `hf_cache/`, `slides/`. `team/` keeps its own copy of the data it needs.
 
