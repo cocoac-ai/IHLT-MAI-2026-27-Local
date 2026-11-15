@@ -1,5 +1,7 @@
 # IHLT-MAI-2026-27-Local
 
+**打开先看：[overview/0-general/todo.md](overview/0-general/todo.md)**（现在该做什么、截止日期、等别人）
+
 Ran's own workspace for the UPC MAI course *Introduction to Human Language Technologies* (2026-27).
 
 | Folder | What |
