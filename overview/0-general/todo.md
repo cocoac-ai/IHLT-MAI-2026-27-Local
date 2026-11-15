@@ -5,7 +5,7 @@ State on 2026-11-15. What is left, by topic. Items marked *decided* are not to b
 ## General
 
 - [ ] After the course: decide whether to delete the local clone `team/` and keep only this repository (the team repository stays on GitHub with the `labNN-submitted` tags).
-- *Decided:* no more TextServer queries (daily quota, see [labs/textserver.md](labs/textserver.md)). The code stays in the notebooks, switched off.
+- *Decided:* no more TextServer queries (daily quota, see [labs/textserver.md](../1-labs/textserver.md)). The code stays in the notebooks, switched off.
 
 ## Labs
 
@@ -27,7 +27,7 @@ All nine notebooks in `labs/` are complete and fully executed (every code cell h
 
 The notebook `project/sts-project.ipynb` is complete and executed (ALL 0.8217, 2nd of 89; Mean 0.6937, 1st). A 12-slide draft exists in `slides/projects/STS Project Presentation.pptx` (not tracked, last changed 2026-10-18).
 
-- [ ] Decide the authors: alone, or split with a teammate following [project/two-student-plan.md](project/two-student-plan.md).
+- [ ] Decide the authors: alone, or split with a teammate following [project/two-student-plan.md](../2-project/two-student-plan.md).
 - [ ] Fill in the student names (first cell of the notebook, title slide).
 - [ ] Check that every number on the slides still matches the notebook output (the slides are older than the last notebook run).
 - [ ] Restart & Run All, then rename to `sts-[Student1]-[Student2].ipynb`.
