@@ -1,8 +1,12 @@
-# Local vs. team versions
+# Local vs. team: differences
+
+- Team repo: `IHLT-MAI-2026-27-Labs`, cloned in `team/` (labs and project, so this file is in `0-general/`)
+- Local: this repository (`IHLT-MAI-2026-27-Local`)
+- Compared versions: team `labNN-submitted` tags, local `main`, 2026-11-15
 
 This repository (`IHLT-MAI-2026-27-Local`) is my own study version; the team repository (`IHLT-MAI-2026-27-Labs`, cloned in `team/`) holds what was submitted. The local labs compare the tools (NLTK, spaCy, FreeLing/TextServer) instead of using only the one of the submission. State on 2026-11-15; the submitted versions are the `labNN-submitted` tags of the team repository.
 
-## General
+## 1. General
 
 | | Local (this repository) | Team (`team/`) |
 |---|---|---|
@@ -14,7 +18,7 @@ This repository (`IHLT-MAI-2026-27-Local`) is my own study version; the team rep
 | TextServer | `common/textserver.py`, caches in `common/` (`ukb_senses.json`, `textserver_tokenizer.json`) | `common/textserver.py`; the UKB cache is in `lab06/` |
 | Git | branch `main`, commit directly | branch `main`, changes only through pull requests; `labNN-submitted` tags |
 
-## Labs
+## 2. Labs
 
 | Lab | Local | Team (submitted) |
 |---|---|---|
@@ -28,11 +32,16 @@ This repository (`IHLT-MAI-2026-27-Local`) is my own study version; the team rep
 | Lab08 | done | not submitted (`lab08/` empty) |
 | Lab09 | done (fastcoref) | not submitted (`lab09/` empty) |
 
-## Project
+## 3. Project
 
 | | Local | Team |
 |---|---|---|
 | Notebook | `project/sts-project.ipynb`, complete and executed, one author (student names blank) | `project/` empty |
-| Split between two students | plan in [project/two-student-plan.md](project/two-student-plan.md) (not applied to the notebook) | — |
+| Split between two students | plan in [project/two-student-plan.md](../2-project/two-student-plan.md) (not applied to the notebook) | — |
 | Slides | draft `slides/projects/STS Project Presentation.pptx` (not tracked) | — |
 | Running it | needs `data/train/`, `data/test_gold/`, `data/task6-submissions/` and `scikit-learn` | would need the training data, the official submissions and the extra packages first |
+
+## To take from the team / to port
+
+- From team → local:
+- From local → team:
