@@ -9,7 +9,7 @@ Ran's own workspace for the UPC MAI course *Introduction to Human Language Techn
 | `common/` | Shared code and caches: TextServer client, UKB and TextServer answers, `credentials.json` (ignored) |
 | `data/` | Datasets (ignored): `train/`, `trial/`, `test_gold/`, `task6-submissions/` |
 | `models/` | Downloaded models and resources (ignored): `nltk_data/`, `hf_cache/` |
-| `overview/` | Notes, plans and the history of this workspace (`HISTORY.md`) |
+| `overview/` | Notes by topic: `general/`, `labs/`, `project/`; start at `overview/README.md` (to-do list, differences with the team repository, history) |
 | `team/` | Team repository `cocoac-ai/IHLT-MAI-2026-27-Labs` (separate git repo, ignored here) |
 
 `data/`, `models/` and `slides/` are not tracked. `team/` keeps its own copy of the data it needs, in the flat layout of the team repository.

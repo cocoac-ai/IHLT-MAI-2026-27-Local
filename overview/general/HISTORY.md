@@ -19,7 +19,7 @@ The history of the old local branches was not kept: their content is in the file
 | `local/lab02-03-two-libs` | `3c2d137` 2026-11-01 | Lab02 and Lab03 with separate NLTK and spaCy pipelines, plus TextServer (tokenizer, morpho); last commit was WIP | `labs/Lab02-two-libs.ipynb`, `labs/Lab03-two-libs.ipynb`, `common/textserver_tokenizer.json` |
 | `local/lab06-nltk-mfs` | `a274175` 2026-11-04 | Lab06 full study version: NLTK, spaCy and FreeLing pipelines, Lesk, MFS and UKB | `labs/Lab06-full.ipynb`, then `labs/Lab06.ipynb` (see below) |
 | `local/lab07-sections` | `1c24253` 2026-11-05 | Lab07 experiments: NE types, feature combinations, FreeLing entities service (off) | `labs/Lab07-sections.ipynb` |
-| `local/main-project-team` | `dfe6042` 2026-10-20 | STS project split between two students | `overview/project-two-student-plan.md`; its notebook only added the student owners to the section headings, so the single-student notebook of `local/main` was kept |
+| `local/main-project-team` | `dfe6042` 2026-10-20 | STS project split between two students | `overview/project/two-student-plan.md`; its notebook only added the student owners to the section headings, so the single-student notebook of `local/main` was kept |
 
 Changes made while moving the notebooks to `labs/`:
 
