@@ -5,7 +5,7 @@
 ## 现在做什么
 
 1. **决定 STS 项目的作者**：一个人，还是按 [two-student-plan.md](../2-project/two-student-plan.md) 和队友分。定了以后填名字（notebook 第一格、标题页）。
-2. **核对幻灯片**：幻灯片比 notebook 最后一次运行要早，逐个数字对一遍；然后 Restart & Run All，按 `sts-[Student1]-[Student2]` 改名，导出 PDF。
+2. **STS 项目收尾**：notebook 和幻灯片 2026-11-16 都按新要求重做了（见 [project-outline.md](../2-project/project-outline.md)）。剩下：自己读一遍并排练，向老师确认 spaCy 的 parser 可以用，填名字，改名成 `sts-[Student1]-[Student2]`，幻灯片导出 PDF。
 3. **Lab08、Lab09**：本地已完成，团队仓库 `team/lab08/`、`team/lab09/` 还是空的，没交。交之前按下面"交之前检查"的五条过一遍（Lab01–07 丢分的共同原因）。
 
 ## 截止日期
@@ -171,17 +171,37 @@ All nine notebooks in `labs/` are complete and fully executed (every code cell h
 
 ### Project (STS, SemEval 2012 Task 6)
 
-The notebook `project/sts-project.ipynb` is complete and executed (ALL 0.8217, 2nd of 89; Mean 0.6937, 1st). A 12-slide draft exists in `slides/projects/STS Project Presentation.pptx` (not tracked, last changed 2026-10-18).
+Redone on 2026-11-16 for the updated statement (the new "Strategies" page). What the project asks and the state of each part: [project-outline.md](../2-project/project-outline.md).
 
-- [ ] Decide the authors: alone, or split with a teammate following [project/two-student-plan.md](../2-project/two-student-plan.md).
-- [ ] Fill in the student names (first cell of the notebook, title slide).
-- [ ] Check that every number on the slides still matches the notebook output (the slides are older than the last notebook run).
-- [ ] Restart & Run All, then rename to `sts-[Student1]-[Student2].ipynb`.
+- Notebook `project/sts-project.ipynb`: 76 cells, all executed (about 5 minutes). Selected system: 59 features, random forest, one model per dataset. Test: ALL 0.8263, ALLnrm 0.8654, Mean 0.6946; not significantly different from the best official run (UKP, 0.8239).
+- New in this version: dependency features (spaCy), a feature for numbers with a close value, the steps from one measure to a learned model (ridge added), noise of the cross-validation, hyperparameter sensitivity, leave-one-dataset-out, bootstrap intervals, check of the model chosen for the surprise sets, comparison of the methods with the papers.
+- Slides `project/STS Project Presentation.pptx` (12 slides, 16:9, with speaker notes; not tracked). The old deck is kept next to it.
+
+- [ ] Read the notebook and the slides once, and rehearse the talk in 10 minutes. Report: [report.md](../2-project/report.md); the papers in plain words: [papers.md](../2-project/papers.md).
+- [ ] Ask the lecturer whether the spaCy parser (`en_core_web_sm`, no word vectors) is allowed. If not: remove the 10 dependency features (NLTK-only system, ALL 0.0038 lower, same conclusions) and re-run.
+- [ ] Decide the authors: alone, or split with a teammate following [project/two-student-plan.md](../2-project/two-student-plan.md) (the plan describes the old version: 48 features, NLTK only).
+- [ ] Fill in the student names (first cell of the notebook, title slide) and rename to `sts-[Student1]-[Student2].ipynb`.
 - [ ] Export the slides as `sts-[Student1]-[Student2].pdf`.
-- [ ] Rehearse the talk in 10 minutes.
 - [ ] Upload the notebook and the PDF to raco before the oral presentation.
-- [ ] Optional extensions (from the conclusions): normalize numbers, dates and times; align multiword expressions with WordNet; tune the hyperparameters with cross-validation. Each one needs a re-run and updated text and slides.
+- [ ] `slides/projects/papers/5-unt.pdf` and `25-buap.pdf` are the wrong papers (other SemEval tasks, see [papers.md](../2-project/papers.md)); download the STS ones if they are needed.
+- Not done, listed as future work in the notebook: normalize times and dates; align multiword expressions with WordNet; detect negation.
 - [ ] If the two-student plan is used: its section 3 (repository and workflow) still shows the old layout (data at the root, `project/PLAN.md`, `project-sts-team` branch); update it to the layout of the repository where the work is done.
+
+#### 看项目的时候要问、要知道的（2026-11-16）
+
+**要问老师的：**
+
+- [ ] **spaCy 的 parser 能不能用。** 题目禁的是词向量和句向量模型；`en_core_web_sm` 没有词向量，Lab 8 也用它，但它内部有一层学出来的 token 表示。notebook 里量过：去掉这 10 个依存特征，ALL 低 0.0038，结论不变，所以退路是现成的（去掉特征，重跑，改文字和幻灯片里的数字）。
+- [ ] **"每个数据集一个模型"算不算合理。** 测试时我们知道句对来自哪个数据集，前几名也都这么做；但 FBK 的论文批评过这一点。我们的回答在 notebook 7.3。
+
+**要知道的（notebook 里都如实写了）：**
+
+- **数字归一化只修好一半。** 相近的数值（13.70 / 13.73）现在能匹配；`5.30 p.m.` / `17h30` 这类时间格式没修。
+- **lemma 的问题没修。** `riding` 被还原成 `rid`。换规则在交叉验证上没有提升，还会弄坏更多复数词，所以保留原样。
+- **不能说"第一名"。** ALL 0.8263 高于 UKP 的 0.8239，但差别不显著（差的 95% 区间 [-0.0077, 0.0122]）。说"和最好的系统同一水平"。
+- **`5-unt.pdf` 和 `25-buap.pdf` 下载错了**，是别的任务的论文。
+- **[two-student-plan.md](../2-project/two-student-plan.md) 还是旧版内容**（48 个特征、只用 NLTK、旧幻灯片），没改；分工定了再改。
+- **幻灯片的生成脚本没有保存**（在临时目录里），以后改幻灯片直接改 pptx。检查排版时用过本机的 PowerPoint 导出 PDF。
 
 ## 已决定不做
 
