@@ -9,6 +9,10 @@
 # Course slides (PDFs from the lecturer)
 /slides/
 
+# Project slides (kept locally, not committed)
+/project/*.pptx
+/project/*.pdf
+
 # TextServer credentials
 credentials.json
 
