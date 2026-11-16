@@ -122,7 +122,7 @@ Results 这一项只要超过 0.7562 就满分，再高也不加分。所以超�
 
 ## 10. 幻灯片
 
-12 页，16:9，10 分钟左右，每页有讲稿（备注）。结构：任务 → 数据 → 系统 → 三个维度 → 从单个度量到模型 → 怎么选模型 → 结果 → 按数据集 → 分析 → 误差 → 结论。文件是 `project/STS Project Presentation.pptx`，不进 git（`.gitignore`）；旧版留在旁边（`... (old 2026-10-18).pptx`）。
+12 页，16:9，10 分钟左右，每页有讲稿（备注）。结构：任务 → 数据 → 系统 → 三个维度 → 从单个度量到模型 → 怎么选模型 → 结果 → 按数据集 → 分析 → 误差 → 结论。文件是 `project/STS Project Presentation.pptx`，不进 git（`.gitignore`）；旧版已删。
 
 ## 11. 交之前还要做的
 
@@ -133,4 +133,4 @@ Results 这一项只要超过 0.7562 就满分，再高也不加分。所以超�
 
 ## 12. 两个人的分工
 
-见 [two-student-plan.md](two-student-plan.md)。那份计划写的是旧版（48 个特征，只用 NLTK，12 页旧幻灯片），分工定了以后要按现在的 notebook 改。现在先按一个人做完整个项目。
+notebook 已经拆成两本：`project/sts-student1.ipynb`（词汇维度、数据、评测）和 `project/sts-student2.ipynb`（句法维度、模型），用 `project/sts_parts.py` 合并成 `sts-project.ipynb`。分工、接口和用法见 [two-student-plan.md](two-student-plan.md)。

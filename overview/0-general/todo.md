@@ -175,11 +175,11 @@ Redone on 2026-11-16 for the updated statement (the new "Strategies" page). What
 
 - Notebook `project/sts-project.ipynb`: 76 cells, all executed (about 5 minutes). Selected system: 59 features, random forest, one model per dataset. Test: ALL 0.8263, ALLnrm 0.8654, Mean 0.6946; not significantly different from the best official run (UKP, 0.8239).
 - New in this version: dependency features (spaCy), a feature for numbers with a close value, the steps from one measure to a learned model (ridge added), noise of the cross-validation, hyperparameter sensitivity, leave-one-dataset-out, bootstrap intervals, check of the model chosen for the surprise sets, comparison of the methods with the papers.
-- Slides `project/STS Project Presentation.pptx` (12 slides, 16:9, with speaker notes; not tracked). The old deck is kept next to it.
+- Slides `project/STS Project Presentation.pptx` (12 slides, 16:9, with speaker notes; not tracked). The old deck was deleted on 2026-11-16.
 
 - [ ] Read the notebook and the slides once, and rehearse the talk in 10 minutes. Report: [report.md](../2-project/report.md); the papers in plain words: [papers.md](../2-project/papers.md).
 - [ ] Ask the lecturer whether the spaCy parser (`en_core_web_sm`, no word vectors) is allowed. If not: remove the 10 dependency features (NLTK-only system, ALL 0.0038 lower, same conclusions) and re-run.
-- [ ] Decide the authors: alone, or split with a teammate following [project/two-student-plan.md](../2-project/two-student-plan.md) (the plan describes the old version: 48 features, NLTK only).
+- [ ] Decide the authors: alone, or split with a teammate following [two-student-plan.md](../2-project/two-student-plan.md) (updated 2026-11-16; the notebook is already split into `sts-student1.ipynb` and `sts-student2.ipynb`, merged with `sts_parts.py`).
 - [ ] Fill in the student names (first cell of the notebook, title slide) and rename to `sts-[Student1]-[Student2].ipynb`.
 - [ ] Export the slides as `sts-[Student1]-[Student2].pdf`.
 - [ ] Upload the notebook and the PDF to raco before the oral presentation.
@@ -200,7 +200,7 @@ Redone on 2026-11-16 for the updated statement (the new "Strategies" page). What
 - **lemma 的问题没修。** `riding` 被还原成 `rid`。换规则在交叉验证上没有提升，还会弄坏更多复数词，所以保留原样。
 - **不能说"第一名"。** ALL 0.8263 高于 UKP 的 0.8239，但差别不显著（差的 95% 区间 [-0.0077, 0.0122]）。说"和最好的系统同一水平"。
 - **`5-unt.pdf` 和 `25-buap.pdf` 下载错了**，是别的任务的论文。
-- **[two-student-plan.md](../2-project/two-student-plan.md) 还是旧版内容**（48 个特征、只用 NLTK、旧幻灯片），没改；分工定了再改。
+- **两个人的版本已经拆好。** `project/sts-student1.ipynb`（词汇和评测，39 格加 2 格共用）和 `sts-student2.ipynb`（句法和模型，35 格）；`python sts_parts.py merge --run` 合成 `sts-project.ipynb` 并重跑。分工、接口、怎么用见 [two-student-plan.md](../2-project/two-student-plan.md)。以后改 notebook 要改两本分册，不要直接改合并后的那本。
 - **幻灯片的生成脚本没有保存**（在临时目录里），以后改幻灯片直接改 pptx。检查排版时用过本机的 PowerPoint 导出 PDF。
 
 ## 已决定不做
